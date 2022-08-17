@@ -394,5 +394,10 @@
 import Vue from 'vue'
 
 export default Vue.extend({
+  beforeMount() {
+    console.log('-------------------')
+    console.log(process.env.API_BASE_URL)
+    console.log('-------------------')
+  }
 });
 </script>
